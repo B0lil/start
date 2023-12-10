@@ -1,3 +1,19 @@
+def summ(a, b):
+    return a + b
+
+
+def minus(a, b):
+    return a - b
+
+
+def multiplicate(a, b):
+    return a * b
+
+
+def dedenie(a, b):
+    return a / b
+
+
 a = int(input("Значение 1 переменной: "))
 b = int(input("Значение 2 переменной: "))
 valid_operators = ['+', '-', '*', '/']
@@ -6,12 +22,12 @@ if c not in valid_operators:
     print("Неверный оператор.")
     exit()
 if c == "+":
-    res = (a + b)
+    res = summ(a, b)
 elif c == "-":
-    res = (a - b)
+    res = minus(a, b)
 elif c == "*":
-    res = (a * b)
+    res = multiplicate(a, b)
 else:
-    res = (a / b)
+    res = dedenie(a, b)
 
 print(res)
